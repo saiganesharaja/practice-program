@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script> -->
+    <!-- // const arr = [1, 2, 2, 5, 9,\ 5, 2,];
+        // arr.forEach((a, b, array) => {
+        //     if (array.indexOf(a) !== array.lastIndexOf(a)) {
+        //         array.splice(b, 1);
+        //     }
+        // });
+
+        // let array = [1, 2, 2, 5, 9, 5, 2,];
+        //
+    //     let duplicate = (array) => {
+    //         for (let i = 0; i < array.length; i++) {
+    //             for (let j = i + 1; j < array.length; j++)
+    //                 if (array[i] === array[j])
+    //                     array.splice(j, 1);
+    //         }
+    //         return array;
+
+    //     }
+    //     console.log(duplicate([1, 2, 2, 5, 9, 5, 2])); -->
+
+    <!-- </script> -->
+    <!-- <script> -->
+    <!-- //     const str = "How are you";
+    //     let reversedStr = "";
+    //     for (let i = str.length - 1; i >= 0; i--) {
+    //         reversedStr += str[i];
+    //     }
+    //     console.log(reversedStr); -->
+    <!-- </script> -->
+
+    <!-- <script>
+        function name(str1, str2) {
+            // const str = []
+            for (let i = 0; i < str1.length; i++) {
+                for (let i = 0; i < str2.length; j++)
+
+                    if (str1[i] == str2[j]) {
+                        return true;
+
+                    }
+            }
+            return false;
+
+        }
+        console.log(name(" mary", " army"));
+        function compareStrings(s1, s2){ -->
+
+
+    <script>
+
+        function anagrams(s1, s2) {
+
+            if (s1.length !== s2.length) {
+                return false;
+
+            }
+
+            const objS1 = {};
+
+            for (let i = 0; i < s1.length; i++) {
+
+                if (objS1[s1[i]]) {
+                    objS1[s1[i]] += 1;
+                } else {
+                    objS1[s1[i]] = 1;
+                }
+
+
+                const objS2 = {}
+                for (let i = 0; i < s2.length; i++) {
+
+                    if (objS2[s2[i]]) {
+                        objS2[s2[i]] += 1;
+                    } else {
+                        objS1[s2[i]] = 1;
+                    }
+
+                }
+                if (objS1 === objS2) {
+                    return true;
+                }
+
+            }
+
+            return false;
+
+        }
+        console.log(anagrams("army", "mary"));
+
+
+    </script>
+    <!-- 
+    // function checkStringsAnagram(a, b) {
+    // let len1 = a.length;
+    // let len2 = b.length;
+    // if (len1 !== len2) {
+    // console.log('Invalid Input');
+    // return
+    // }
+    // let str1 = a.split('').sort().join('');
+    // let str2 = b.split('').sort().join('');
+    // if (str1 === str2) {
+    // console.log("True");
+    // } else {
+    // console.log("False");
+    // }
+    // }
+    // checkStringsAnagram("army", "mary") -->
+
+
+    <!-- <script> -->
+    <!-- //     const zeros = (array) => {
+    //         for (let i = 0; i < array.length; i++) {
+    //             if (array[i] == 0) {
+    //                 array.splice(i, 1);
+    //                 array.push(0);
+    //             }
+    //         }
+    //         return array;
+    //     }
+    //     console.log(zeros([2, 0, 1, 0, 4, 0, 3])); -->
+    <!-- </script> -->
+    <!-- <script> -->
+    <!-- //     const primeNumber = (array) => {
+    //         if (array > 1) {
+    //             for (let i = 2; i <= Math.ceil(array / 2); i++) {
+    //                 if (array % i === 0) {
+    //                     return false;
+    //                 }
+    //             }
+    //             return true;
+    //         }
+    //     };
+    //     console.log(primeNumber(3)); -->
+    <!-- </script> -->
+
+
+
+</body>
+
+</html>
