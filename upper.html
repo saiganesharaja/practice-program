@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="text" />
+    <p id="p"></p>
+    <script>
+        const text = document.getElementById("text");
+        const p = document.getElementById("p");
+        text.addEventListener("input", function () {
+            let a = text.value.toUpperCase();
+            text.value = a;
+            p.innerHTML = "all characters" + " " + a.length;
+
+        });
+    </script>
+</body>
+
+</html>
